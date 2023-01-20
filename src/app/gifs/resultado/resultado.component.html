@@ -1,0 +1,17 @@
+<hr class="text-dark">
+
+
+<div class="row">
+
+  <div *ngFor="let i of data" class="col-md-4 animate__animated animate__fadeIn">
+    <div class="card">
+   <img [src]="i.images.downsized_medium.url" alt="">
+      <div class="card-body">
+        <p class="card-text">
+          {{i.title}}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
